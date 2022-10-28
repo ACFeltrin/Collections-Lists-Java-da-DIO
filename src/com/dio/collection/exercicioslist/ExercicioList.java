@@ -35,31 +35,31 @@ public class ExercicioList {
         Iterator<Double> iterator1 = temp.iterator();
         while (iterator1.hasNext()) {
             double next = iterator1.next();
-            if (temp >= media) {
+            if (next > media) {
                 switch (count) {
                     case (0):
-                        System.out.printf("1 - janeiro: %.1f\n ", temp);
+                        System.out.printf("1 - janeiro: %.1f\n", next);
                         break;
                     case (1):
-                        System.out.printf("2 - fevereiro: %.1f\n", temp);
+                        System.out.printf("2 - fevereiro: %.1f\n", next);
                         break;
                     case (2):
-                        System.out.printf("3 - março: %.1f\n", temp);
+                        System.out.printf("3 - março: %.1f\n", next);
                         break;
                     case (3):
-                        System.out.printf("4 - abril: %.1f\n", temp);
+                        System.out.printf("4 - abril: %.1f\n ",  next);
                         break;
                     case (4):
-                        System.out.printf("5 - maio: %.1f\n", temp);
+                        System.out.printf("5 - maio: %.1f\n", next);
                         break;
                     case (5):
-                        System.out.printf("6 - junho: %.1f\n", temp);
+                        System.out.printf("6 - junho: %.1f\n", next);
                         break;
                     default:
                         System.out.println("Não houve temperatura acima da média.");
                 }
             }
-
+        count++;
         }
     }
 }
